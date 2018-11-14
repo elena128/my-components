@@ -1,0 +1,106 @@
+.page_box {
+  padding: 15px;
+  overflow: hidden;
+  .page {
+	  float: right
+	}
+}
+
+.ivu-table-cell span.btn {
+	color: #2d8cf0;
+	cursor: pointer;
+	& + span{
+		margin-left: 5px;
+	}
+}
+.search_box {
+  .ivu-card-body {
+    overflow:hidden
+  }
+  .search_select {
+    width: 130px;
+    float:right;
+    margin-left: 10px;
+  }
+  .search_btn {
+    float:right;
+    margin-left: 10px;
+  }
+  .ivu-input-wrapper{
+    float:right;
+    width: 130px;
+  }
+}
+.ivu-card-head {
+  background: #eee;
+}
+.ivu-row {
+  line-height: 2;
+}
+.f_r {
+  float: right;
+}
+.page_detail {
+  background: #fff;
+  padding: 15px;
+  font-size: 14px;
+  .ivu-row .ivu-col {
+    margin-bottom: 20px;
+  }
+}
+.padding-left-10{
+  margin-top: 30px;
+}
+button.ivu-btn {
+  min-width: 100px;
+  line-height: 1.5
+}
+.mce-btn button {
+  min-width: auto
+}
+
+.madal_box {
+  line-height: 2;
+  font-size: 14px;
+}
+
+.demo-spin-icon-load{
+  animation: ani-demo-spin 1s linear infinite;
+}
+@keyframes ani-demo-spin {
+  from { transform: rotate(0deg);}
+  50%  { transform: rotate(180deg);}
+  to   { transform: rotate(360deg);}
+}
+
+.my_textarea {
+  width: 80%;
+  resize:none;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #dddee1;
+}
+
+.user_property_detail {
+  button {
+    float: right;
+    min-width: auto;
+    i {
+      color:#666;
+    }
+    &.ivu-page-disabled i {
+      color: #ccc
+    }
+  }
+}
+.single-page{
+  position: relative;
+}
+.row_text {
+  display: inline-block;
+  width: 150px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+}
