@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <Swipe :pagination-visible="true" :loop="true" :paginationClickable="true" :autoPlay="0"></Swipe>
-    <my-cascader :sources="sources" :initValue="['A', 'a2']" @onChange="onChange"></my-cascader>
+    <!-- <my-cascader :sources="sources" :initValue="['A', 'a2']" @onChange="onChange"></my-cascader> -->
+    <pager :len="41" :now="now" @getList="now = $event || 1"></pager>
   </div>
 </template>
 
@@ -9,11 +10,12 @@
 import Swipe from './components/swipe'
 import MyCascader from './components/my-cascader'
 import city from '@/util/city'
+import Pager from '@/components/pager'
 
 export default {
   name: 'app',
   components: {
-    Swipe, MyCascader
+    Swipe, MyCascader, Pager
   },
   data () {
     return {
@@ -72,7 +74,8 @@ export default {
         ],
         level: 4
       },
-      sources2: {data: city, level: 2}
+      sources2: {data: city, level: 2},
+      now: 1
     }
   },
   methods: {
